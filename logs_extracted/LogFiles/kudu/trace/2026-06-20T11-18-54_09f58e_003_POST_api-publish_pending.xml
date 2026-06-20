@@ -1,0 +1,316 @@
+<step title="Incoming Request" date="2026-06-20T11:18:54.569" instance="09f58e" url="/api/publish?type=zip" method="POST" type="request" pid="833,1,15" Accept="*/*" Host="dicto-g0f3eub8h6b4f6f0.scm.centralindia-01.azurewebsites.net" User-Agent="AZURECLI/2.87.0 (HOMEBREW)" Accept-Encoding="gzip, deflate" Authorization="Bea..." Cache-Control="no-cache" Content-Type="application/octet-stream" Cookie="ARRAffinity=09f58ebce3a37c8a17f005e20914cff492ec015f1986abcf69e8075ed4dc8f8f; ARRAffinitySameSite=09f58ebce3a37c8a17f005e20914cff492ec015f1986abcf69e8075ed4dc8f8f" Content-Length="215372" x-ms-client-request-id="c9e4dc3a-6c99-11f1-b816-3a75b05bc1ba" x-ms-artifact-checksum="225906b3b38c0b11ce65ffc7d7f7e43c12f7bc906bd74df58fafcc8e983b4095" X-ARR-LOG-ID="c9e4dc3a-6c99-11f1-b816-3a75b05bc1ba" CLIENT-IP="43.250.41.145:62145" X-SITE-DEPLOYMENT-ID="dicto" WAS-DEFAULT-HOSTNAME="dicto-g0f3eub8h6b4f6f0.scm.centralindia-01.azurewebsites.net" X-Forwarded-Proto="https" X-AppService-Proto="https" X-Forwarded-TlsVersion="1.3" X-WAWS-Unencoded-URL="/api/publish?type=zip" X-Client-IP="43.250.41.145" X-Client-Port="62145" >
+  <step title="OneDeploy" date="2026-06-20T11:18:54.768" >
+    <step title="None repository commit" date="2026-06-20T11:18:54.808" >
+      <step title="Commit id: f40b7138-1072-4cf5-8a39-fd7dc0d7170b" date="2026-06-20T11:18:54.817" Message="N/A" AuthorName="N/A" AuthorEmail="N/A" /><!-- duration: 2ms -->
+    </step><!-- duration: 13ms -->
+    <step title="Starting PushDeployAsync" date="2026-06-20T11:18:54.828" /><!-- duration: 2ms -->
+    <step title="Writing artifact to /tmp/zipdeploy/b05a2838-9cca-4eaa-83c4-9c6c3e84b515.zip" date="2026-06-20T11:18:54.870" >
+      <step title="Writing multipart request body to /tmp/zipdeploy/b05a2838-9cca-4eaa-83c4-9c6c3e84b515.zip" date="2026-06-20T11:18:54.909" /><!-- duration: 22ms -->
+      <step title="Writing zip file to /tmp/zipdeploy/b05a2838-9cca-4eaa-83c4-9c6c3e84b515.zip" date="2026-06-20T11:18:54.968" /><!-- duration: 193ms -->
+    </step><!-- duration: 303ms -->
+    <step title="Attempting to fetch target branch HEAD" date="2026-06-20T11:18:55.191" /><!-- duration: 2ms -->
+    <step title="Acquiring Deployment Lock" date="2026-06-20T11:18:55.195" /><!-- duration: 5ms -->
+    <step title="Acquired Deployment Lock" date="2026-06-20T11:18:55.252" /><!-- duration: 2ms -->
+    <step title="Performing fetch based deployment" date="2026-06-20T11:18:55.261" >
+      <step title="Creating temporary deployment" date="2026-06-20T11:18:55.281" /><!-- duration: 95ms -->
+      <step title="Releasing Deployment Lock" date="2026-06-20T11:18:56.536" /><!-- duration: 3ms -->
+      <step title="Cleaning up temp folders from previous zip deployments and extracting pushed zip file /tmp/zipdeploy/b05a2838-9cca-4eaa-83c4-9c6c3e84b515.zip (0.21 MB) to /tmp/zipdeploy/extracted" date="2026-06-20T11:18:56.737" >
+        <step title="ChmodRecursive Process exited with total time taken in ms: 117" date="2026-06-20T11:18:57.006" /><!-- duration: 4ms -->
+      </step><!-- duration: 277ms -->
+      <step title="None repository commit" date="2026-06-20T11:18:57.031" >
+        <step title="Commit id: f40b7138-1072-4cf5-8a39-fd7dc0d7170b" date="2026-06-20T11:18:57.033" Message="OneDeploy" AuthorName="N/A" AuthorEmail="N/A" /><!-- duration: 1ms -->
+      </step><!-- duration: 5ms -->
+      <step title="Deployment timer started" date="2026-06-20T11:18:59.051" >
+        <step title="DeploymentManager.Deploy(id:f40b7138-1072-4cf5-8a39-fd7dc0d7170b)" date="2026-06-20T11:18:59.070" >
+          <step title="Collecting changeset information" date="2026-06-20T11:18:59.113" /><!-- duration: 80ms -->
+          <step title="Updating submodules" date="2026-06-20T11:18:59.196" /><!-- duration: 1152ms -->
+          <step title="Determining deployment builder" date="2026-06-20T11:19:00.577" >
+            <step title="Builder is OryxBuilder" date="2026-06-20T11:19:00.594" /><!-- duration: 2ms -->
+          </step><!-- duration: 26ms -->
+          <step title="PreDeployment: context.CleanOutputPath False" date="2026-06-20T11:19:00.662" >
+            <step title="PreDeployment: context.OutputPath /home/site/wwwroot" date="2026-06-20T11:19:00.847" >
+              <step title="Building" date="2026-06-20T11:19:00.981" >
+                <step title="Executing external process" date="2026-06-20T11:19:01.334" type="process" path="bash" arguments="-c &quot;oryx build /tmp/zipdeploy/extracted -o /home/site/wwwroot --platform nodejs --platform-version 22 -p virtualenv_name= --log-file /tmp/build-debug.log  -i /tmp/8decebdba7dec45 -p compress_node_modules=tar-gz | tee /tmp/oryx-build.log ; exit $PIPESTATUS &quot;" >
+                  <step title="Cpu: npm install(984,40.240s)+build.sh(888,0.070s)+oryx(865,9.000s)+tee(866,0.000s)+bash(864,0.000s)=total(49.260s)" date="2026-06-20T11:20:40.750" /><!-- duration: 12ms -->
+                  <step title="bash: no io activity for 61s, prev-cpu=-1.000s, current-cpu=49.260s" date="2026-06-20T11:20:40.790" /><!-- duration: 19ms -->
+                  <step title="Cpu: node(1058,43.010s)+sh(1057,0.000s)+npm run build(1046,0.750s)+build.sh(888,0.070s)+oryx(865,10.240s)+tee(866,0.010s)+bash(864,0.000s)=total(54.080s)" date="2026-06-20T11:22:15.924" /><!-- duration: 21ms -->
+                  <step title="bash: no io activity for 60s, prev-cpu=-1.000s, current-cpu=54.080s" date="2026-06-20T11:22:15.992" /><!-- duration: 21ms -->
+                  <step title="Cpu: node(1058,75.230s)+sh(1057,0.000s)+npm run build(1046,0.750s)+build.sh(888,0.070s)+oryx(865,10.680s)+tee(866,0.010s)+bash(864,0.000s)=total(86.730s)" date="2026-06-20T11:23:16.801" /><!-- duration: 19ms -->
+                  <step title="bash: no io activity for 121s, prev-cpu=54.080s, current-cpu=86.730s" date="2026-06-20T11:23:16.851" /><!-- duration: 50ms -->
+                  <step title="Process dump" date="2026-06-20T11:23:42.772" exitCode="1" type="processOutput" /><!-- duration: 4ms -->
+                </step><!-- duration: 281465ms -->
+                <step title="Error occurred" date="2026-06-20T11:23:42.898" type="error" text="npm notice
+npm notice New major version of npm available! 10.9.7 -&gt; 11.17.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.17.0
+npm notice To update run: npm install -g npm@11.17.0
+npm notice
+
+&gt; Build error occurred
+Error: Turbopack build failed with 1 errors:
+./src/app/globals.css
+Error evaluating Node.js code
+Error: Cannot find module &apos;@tailwindcss/postcss&apos;
+Require stack:
+- /tmp/8decebdba7dec45/.next/build/chunks/[root-of-the-server]__0oj80bi._.js
+- /tmp/8decebdba7dec45/.next/build/chunks/[turbopack]_runtime.js
+- /tmp/8decebdba7dec45/.next/build/56416d4ae4ce586f.js
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)]
+    [at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)]
+    [at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)]
+    [at Function._load (node:internal/modules/cjs/loader:1192:37)]
+    [at TracingChannel.traceSync (node:diagnostics_channel:328:14)]
+    [at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)]
+    [at Module.require (node:internal/modules/cjs/loader:1463:12)]
+    [at require (node:internal/modules/helpers:147:16)]
+    at require (turbopack:///[turbopack-node]/transforms/postcss.ts:49:25) [/tmp/8decebdba7dec45/.next/build/chunks/[root-of-the-server]__0oj80bi._.js:134:33]
+    [at &lt;anonymous&gt;]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+
+
+    at require (turbopack:///[turbopack-node]/transforms/postcss.ts:49:25) [/tmp/8decebdba7dec45/.next/build/chunks/[root-of-the-server]__0oj80bi._.js:134:33])
+/bin/bash -c &quot;oryx build /tmp/zipdeploy/extracted -o /home/site/wwwroot --platform nodejs --platform-version 22 -p virtualenv_name= --log-file /tmp/build-debug.log  -i /tmp/8decebdba7dec45 -p compress_node_modules=tar-gz | tee /tmp/oryx-build.log ; exit $PIPESTATUS &quot;" stackTrace="   at Kudu.Core.Infrastructure.Executable.ExecuteInternal(ITracer tracer, Func`2 onWriteOutput, Func`2 onWriteError, CancellationToken token, Encoding encoding, String arguments, Object[] args) in /tmp/KuduLite/Kudu.Core/Infrastructure/Executable.cs:line 239
+   at Kudu.Core.Infrastructure.Executable.ExecuteWithProgressWriter(ILogger logger, ITracer tracer, CancellationToken token, String arguments, Object[] args) in /tmp/KuduLite/Kudu.Core/Infrastructure/Executable.cs:line 118
+   at Kudu.Core.Deployment.Generator.ExternalCommandBuilder.RunCommand(DeploymentContext context, String command, Boolean ignoreManifest, CancellationToken token, String message, ILogger internalLogger) in /tmp/KuduLite/Kudu.Core/Deployment/Generator/ExternalCommandBuilder.cs:line 145" /><!-- duration: 4ms -->
+                <step title="Error occurred" date="2026-06-20T11:23:42.947" type="error" text="npm notice
+npm notice New major version of npm available! 10.9.7 -&gt; 11.17.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.17.0
+npm notice To update run: npm install -g npm@11.17.0
+npm notice
+
+&gt; Build error occurred
+Error: Turbopack build failed with 1 errors:
+./src/app/globals.css
+Error evaluating Node.js code
+Error: Cannot find module &apos;@tailwindcss/postcss&apos;
+Require stack:
+- /tmp/8decebdba7dec45/.next/build/chunks/[root-of-the-server]__0oj80bi._.js
+- /tmp/8decebdba7dec45/.next/build/chunks/[turbopack]_runtime.js
+- /tmp/8decebdba7dec45/.next/build/56416d4ae4ce586f.js
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)]
+    [at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)]
+    [at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)]
+    [at Function._load (node:internal/modules/cjs/loader:1192:37)]
+    [at TracingChannel.traceSync (node:diagnostics_channel:328:14)]
+    [at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)]
+    [at Module.require (node:internal/modules/cjs/loader:1463:12)]
+    [at require (node:internal/modules/helpers:147:16)]
+    at require (turbopack:///[turbopack-node]/transforms/postcss.ts:49:25) [/tmp/8decebdba7dec45/.next/build/chunks/[root-of-the-server]__0oj80bi._.js:134:33]
+    [at &lt;anonymous&gt;]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+
+
+    at require (turbopack:///[turbopack-node]/transforms/postcss.ts:49:25) [/tmp/8decebdba7dec45/.next/build/chunks/[root-of-the-server]__0oj80bi._.js:134:33])
+/bin/bash -c &quot;oryx build /tmp/zipdeploy/extracted -o /home/site/wwwroot --platform nodejs --platform-version 22 -p virtualenv_name= --log-file /tmp/build-debug.log  -i /tmp/8decebdba7dec45 -p compress_node_modules=tar-gz | tee /tmp/oryx-build.log ; exit $PIPESTATUS &quot;" stackTrace="   at Kudu.Core.Infrastructure.Executable.ExecuteInternal(ITracer tracer, Func`2 onWriteOutput, Func`2 onWriteError, CancellationToken token, Encoding encoding, String arguments, Object[] args) in /tmp/KuduLite/Kudu.Core/Infrastructure/Executable.cs:line 239
+   at Kudu.Core.Infrastructure.Executable.ExecuteWithProgressWriter(ILogger logger, ITracer tracer, CancellationToken token, String arguments, Object[] args) in /tmp/KuduLite/Kudu.Core/Infrastructure/Executable.cs:line 118
+   at Kudu.Core.Deployment.Generator.ExternalCommandBuilder.RunCommand(DeploymentContext context, String command, Boolean ignoreManifest, CancellationToken token, String message, ILogger internalLogger) in /tmp/KuduLite/Kudu.Core/Deployment/Generator/ExternalCommandBuilder.cs:line 145
+   at Kudu.Core.Deployment.Generator.OryxBuilder.RunBuildCommand(IOryxArguments args, DeploymentContext context, CancellationToken token) in /tmp/KuduLite/Kudu.Core/Deployment/Generator/OryxBuilder.cs:line 295
+   at Kudu.Core.Deployment.Generator.OryxBuilder.Build(DeploymentContext context, CancellationToken token) in /tmp/KuduLite/Kudu.Core/Deployment/Generator/OryxBuilder.cs:line 136
+   at Kudu.Core.Deployment.DeploymentManager.Build(ChangeSet changeSet, ITracer tracer, IDisposable deployStep, IRepository repository, DeploymentInfoBase deploymentInfo, DeploymentAnalytics deploymentAnalytics, Boolean fullBuildByDefault, CancellationToken cancellationToken) in /tmp/KuduLite/Kudu.Core/Deployment/DeploymentManager.cs:line 771" /><!-- duration: 4ms -->
+                <step title="Using GenericDeploymentLogParser" date="2026-06-20T11:23:43.243" /><!-- duration: 3ms -->
+              </step><!-- duration: 283558ms -->
+            </step><!-- duration: 283702ms -->
+            <step title="Error occurred" date="2026-06-20T11:23:44.552" type="error" text="npm notice
+npm notice New major version of npm available! 10.9.7 -&gt; 11.17.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.17.0
+npm notice To update run: npm install -g npm@11.17.0
+npm notice
+
+&gt; Build error occurred
+Error: Turbopack build failed with 1 errors:
+./src/app/globals.css
+Error evaluating Node.js code
+Error: Cannot find module &apos;@tailwindcss/postcss&apos;
+Require stack:
+- /tmp/8decebdba7dec45/.next/build/chunks/[root-of-the-server]__0oj80bi._.js
+- /tmp/8decebdba7dec45/.next/build/chunks/[turbopack]_runtime.js
+- /tmp/8decebdba7dec45/.next/build/56416d4ae4ce586f.js
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)]
+    [at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)]
+    [at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)]
+    [at Function._load (node:internal/modules/cjs/loader:1192:37)]
+    [at TracingChannel.traceSync (node:diagnostics_channel:328:14)]
+    [at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)]
+    [at Module.require (node:internal/modules/cjs/loader:1463:12)]
+    [at require (node:internal/modules/helpers:147:16)]
+    at require (turbopack:///[turbopack-node]/transforms/postcss.ts:49:25) [/tmp/8decebdba7dec45/.next/build/chunks/[root-of-the-server]__0oj80bi._.js:134:33]
+    [at &lt;anonymous&gt;]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+
+
+    at require (turbopack:///[turbopack-node]/transforms/postcss.ts:49:25) [/tmp/8decebdba7dec45/.next/build/chunks/[root-of-the-server]__0oj80bi._.js:134:33])
+/bin/bash -c &quot;oryx build /tmp/zipdeploy/extracted -o /home/site/wwwroot --platform nodejs --platform-version 22 -p virtualenv_name= --log-file /tmp/build-debug.log  -i /tmp/8decebdba7dec45 -p compress_node_modules=tar-gz | tee /tmp/oryx-build.log ; exit $PIPESTATUS &quot;" stackTrace="   at Kudu.Core.Infrastructure.Executable.ExecuteInternal(ITracer tracer, Func`2 onWriteOutput, Func`2 onWriteError, CancellationToken token, Encoding encoding, String arguments, Object[] args) in /tmp/KuduLite/Kudu.Core/Infrastructure/Executable.cs:line 239
+   at Kudu.Core.Infrastructure.Executable.ExecuteWithProgressWriter(ILogger logger, ITracer tracer, CancellationToken token, String arguments, Object[] args) in /tmp/KuduLite/Kudu.Core/Infrastructure/Executable.cs:line 118
+   at Kudu.Core.Deployment.Generator.ExternalCommandBuilder.RunCommand(DeploymentContext context, String command, Boolean ignoreManifest, CancellationToken token, String message, ILogger internalLogger) in /tmp/KuduLite/Kudu.Core/Deployment/Generator/ExternalCommandBuilder.cs:line 145
+   at Kudu.Core.Deployment.Generator.OryxBuilder.RunBuildCommand(IOryxArguments args, DeploymentContext context, CancellationToken token) in /tmp/KuduLite/Kudu.Core/Deployment/Generator/OryxBuilder.cs:line 295
+   at Kudu.Core.Deployment.Generator.OryxBuilder.Build(DeploymentContext context, CancellationToken token) in /tmp/KuduLite/Kudu.Core/Deployment/Generator/OryxBuilder.cs:line 136
+   at Kudu.Core.Deployment.DeploymentManager.Build(ChangeSet changeSet, ITracer tracer, IDisposable deployStep, IRepository repository, DeploymentInfoBase deploymentInfo, DeploymentAnalytics deploymentAnalytics, Boolean fullBuildByDefault, CancellationToken cancellationToken) in /tmp/KuduLite/Kudu.Core/Deployment/DeploymentManager.cs:line 771
+   at Kudu.Core.Deployment.DeploymentManager.Build(ChangeSet changeSet, ITracer tracer, IDisposable deployStep, IRepository repository, DeploymentInfoBase deploymentInfo, DeploymentAnalytics deploymentAnalytics, Boolean fullBuildByDefault, CancellationToken cancellationToken) in /tmp/KuduLite/Kudu.Core/Deployment/DeploymentManager.cs:line 840" /><!-- duration: 3ms -->
+            <step title="Cleaning up temp files" date="2026-06-20T11:23:44.649" /><!-- duration: 5196ms -->
+            <step title="Cleaning up temp files" date="2026-06-20T11:23:49.914" /><!-- duration: 552ms -->
+            <step title="Error occurred" date="2026-06-20T11:23:50.487" type="error" text="npm notice
+npm notice New major version of npm available! 10.9.7 -&gt; 11.17.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.17.0
+npm notice To update run: npm install -g npm@11.17.0
+npm notice
+
+&gt; Build error occurred
+Error: Turbopack build failed with 1 errors:
+./src/app/globals.css
+Error evaluating Node.js code
+Error: Cannot find module &apos;@tailwindcss/postcss&apos;
+Require stack:
+- /tmp/8decebdba7dec45/.next/build/chunks/[root-of-the-server]__0oj80bi._.js
+- /tmp/8decebdba7dec45/.next/build/chunks/[turbopack]_runtime.js
+- /tmp/8decebdba7dec45/.next/build/56416d4ae4ce586f.js
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)]
+    [at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)]
+    [at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)]
+    [at Function._load (node:internal/modules/cjs/loader:1192:37)]
+    [at TracingChannel.traceSync (node:diagnostics_channel:328:14)]
+    [at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)]
+    [at Module.require (node:internal/modules/cjs/loader:1463:12)]
+    [at require (node:internal/modules/helpers:147:16)]
+    at require (turbopack:///[turbopack-node]/transforms/postcss.ts:49:25) [/tmp/8decebdba7dec45/.next/build/chunks/[root-of-the-server]__0oj80bi._.js:134:33]
+    [at &lt;anonymous&gt;]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+
+
+    at require (turbopack:///[turbopack-node]/transforms/postcss.ts:49:25) [/tmp/8decebdba7dec45/.next/build/chunks/[root-of-the-server]__0oj80bi._.js:134:33])
+/bin/bash -c &quot;oryx build /tmp/zipdeploy/extracted -o /home/site/wwwroot --platform nodejs --platform-version 22 -p virtualenv_name= --log-file /tmp/build-debug.log  -i /tmp/8decebdba7dec45 -p compress_node_modules=tar-gz | tee /tmp/oryx-build.log ; exit $PIPESTATUS &quot;" stackTrace="   at Kudu.Core.Infrastructure.Executable.ExecuteInternal(ITracer tracer, Func`2 onWriteOutput, Func`2 onWriteError, CancellationToken token, Encoding encoding, String arguments, Object[] args) in /tmp/KuduLite/Kudu.Core/Infrastructure/Executable.cs:line 239
+   at Kudu.Core.Infrastructure.Executable.ExecuteWithProgressWriter(ILogger logger, ITracer tracer, CancellationToken token, String arguments, Object[] args) in /tmp/KuduLite/Kudu.Core/Infrastructure/Executable.cs:line 118
+   at Kudu.Core.Deployment.Generator.ExternalCommandBuilder.RunCommand(DeploymentContext context, String command, Boolean ignoreManifest, CancellationToken token, String message, ILogger internalLogger) in /tmp/KuduLite/Kudu.Core/Deployment/Generator/ExternalCommandBuilder.cs:line 145
+   at Kudu.Core.Deployment.Generator.OryxBuilder.RunBuildCommand(IOryxArguments args, DeploymentContext context, CancellationToken token) in /tmp/KuduLite/Kudu.Core/Deployment/Generator/OryxBuilder.cs:line 295
+   at Kudu.Core.Deployment.Generator.OryxBuilder.Build(DeploymentContext context, CancellationToken token) in /tmp/KuduLite/Kudu.Core/Deployment/Generator/OryxBuilder.cs:line 136
+   at Kudu.Core.Deployment.DeploymentManager.Build(ChangeSet changeSet, ITracer tracer, IDisposable deployStep, IRepository repository, DeploymentInfoBase deploymentInfo, DeploymentAnalytics deploymentAnalytics, Boolean fullBuildByDefault, CancellationToken cancellationToken) in /tmp/KuduLite/Kudu.Core/Deployment/DeploymentManager.cs:line 771
+   at Kudu.Core.Deployment.DeploymentManager.Build(ChangeSet changeSet, ITracer tracer, IDisposable deployStep, IRepository repository, DeploymentInfoBase deploymentInfo, DeploymentAnalytics deploymentAnalytics, Boolean fullBuildByDefault, CancellationToken cancellationToken) in /tmp/KuduLite/Kudu.Core/Deployment/DeploymentManager.cs:line 840
+   at Kudu.Core.Deployment.DeploymentManager.DeployAsync(IRepository repository, ChangeSet changeSet, String deployer, Boolean clean, DeploymentInfoBase deploymentInfo, Boolean needFileUpdate, Boolean fullBuildByDefault) in /tmp/KuduLite/Kudu.Core/Deployment/DeploymentManager.cs:line 266" /><!-- duration: 5ms -->
+          </step><!-- duration: 289836ms -->
+          <step title="Reloading status file with latest updates" date="2026-06-20T11:23:50.566" >
+            <step title="WebHooksManager.PublishEventAsync: PostDeployment" date="2026-06-20T11:23:50.596" /><!-- duration: 320ms -->
+          </step><!-- duration: 353ms -->
+          <step title="Error occurred" date="2026-06-20T11:23:50.920" type="error" text="npm notice
+npm notice New major version of npm available! 10.9.7 -&gt; 11.17.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.17.0
+npm notice To update run: npm install -g npm@11.17.0
+npm notice
+
+&gt; Build error occurred
+Error: Turbopack build failed with 1 errors:
+./src/app/globals.css
+Error evaluating Node.js code
+Error: Cannot find module &apos;@tailwindcss/postcss&apos;
+Require stack:
+- /tmp/8decebdba7dec45/.next/build/chunks/[root-of-the-server]__0oj80bi._.js
+- /tmp/8decebdba7dec45/.next/build/chunks/[turbopack]_runtime.js
+- /tmp/8decebdba7dec45/.next/build/56416d4ae4ce586f.js
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)]
+    [at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)]
+    [at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)]
+    [at Function._load (node:internal/modules/cjs/loader:1192:37)]
+    [at TracingChannel.traceSync (node:diagnostics_channel:328:14)]
+    [at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)]
+    [at Module.require (node:internal/modules/cjs/loader:1463:12)]
+    [at require (node:internal/modules/helpers:147:16)]
+    at require (turbopack:///[turbopack-node]/transforms/postcss.ts:49:25) [/tmp/8decebdba7dec45/.next/build/chunks/[root-of-the-server]__0oj80bi._.js:134:33]
+    [at &lt;anonymous&gt;]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+
+
+    at require (turbopack:///[turbopack-node]/transforms/postcss.ts:49:25) [/tmp/8decebdba7dec45/.next/build/chunks/[root-of-the-server]__0oj80bi._.js:134:33])
+/bin/bash -c &quot;oryx build /tmp/zipdeploy/extracted -o /home/site/wwwroot --platform nodejs --platform-version 22 -p virtualenv_name= --log-file /tmp/build-debug.log  -i /tmp/8decebdba7dec45 -p compress_node_modules=tar-gz | tee /tmp/oryx-build.log ; exit $PIPESTATUS &quot;" stackTrace="   at Kudu.Core.Infrastructure.Executable.ExecuteInternal(ITracer tracer, Func`2 onWriteOutput, Func`2 onWriteError, CancellationToken token, Encoding encoding, String arguments, Object[] args) in /tmp/KuduLite/Kudu.Core/Infrastructure/Executable.cs:line 239
+   at Kudu.Core.Infrastructure.Executable.ExecuteWithProgressWriter(ILogger logger, ITracer tracer, CancellationToken token, String arguments, Object[] args) in /tmp/KuduLite/Kudu.Core/Infrastructure/Executable.cs:line 118
+   at Kudu.Core.Deployment.Generator.ExternalCommandBuilder.RunCommand(DeploymentContext context, String command, Boolean ignoreManifest, CancellationToken token, String message, ILogger internalLogger) in /tmp/KuduLite/Kudu.Core/Deployment/Generator/ExternalCommandBuilder.cs:line 145
+   at Kudu.Core.Deployment.Generator.OryxBuilder.RunBuildCommand(IOryxArguments args, DeploymentContext context, CancellationToken token) in /tmp/KuduLite/Kudu.Core/Deployment/Generator/OryxBuilder.cs:line 295
+   at Kudu.Core.Deployment.Generator.OryxBuilder.Build(DeploymentContext context, CancellationToken token) in /tmp/KuduLite/Kudu.Core/Deployment/Generator/OryxBuilder.cs:line 136
+   at Kudu.Core.Deployment.DeploymentManager.Build(ChangeSet changeSet, ITracer tracer, IDisposable deployStep, IRepository repository, DeploymentInfoBase deploymentInfo, DeploymentAnalytics deploymentAnalytics, Boolean fullBuildByDefault, CancellationToken cancellationToken) in /tmp/KuduLite/Kudu.Core/Deployment/DeploymentManager.cs:line 771
+   at Kudu.Core.Deployment.DeploymentManager.Build(ChangeSet changeSet, ITracer tracer, IDisposable deployStep, IRepository repository, DeploymentInfoBase deploymentInfo, DeploymentAnalytics deploymentAnalytics, Boolean fullBuildByDefault, CancellationToken cancellationToken) in /tmp/KuduLite/Kudu.Core/Deployment/DeploymentManager.cs:line 840
+   at Kudu.Core.Deployment.DeploymentManager.DeployAsync(IRepository repository, ChangeSet changeSet, String deployer, Boolean clean, DeploymentInfoBase deploymentInfo, Boolean needFileUpdate, Boolean fullBuildByDefault) in /tmp/KuduLite/Kudu.Core/Deployment/DeploymentManager.cs:line 266" /><!-- duration: 2ms -->
+          <step title="Marking deployment as failed and cleaning up the temp deployment" date="2026-06-20T11:23:50.959" /><!-- duration: 2ms -->
+        </step><!-- duration: 291984ms -->
+      </step><!-- duration: 292013ms -->
+      <step title="Error occurred" date="2026-06-20T11:23:51.132" type="error" text="Deployment failed" stackTrace="   at Kudu.Core.Deployment.DeploymentManager.DeployAsync(IRepository repository, ChangeSet changeSet, String deployer, Boolean clean, DeploymentInfoBase deploymentInfo, Boolean needFileUpdate, Boolean fullBuildByDefault) in /tmp/KuduLite/Kudu.Core/Deployment/DeploymentManager.cs:line 307
+   at Kudu.Core.Deployment.FetchDeploymentManager.PerformDeployment(DeploymentInfoBase deploymentInfo, IDisposable tempDeployment, ChangeSet tempChangeSet, DeployStatusApiResult updateStatusObj) in /tmp/KuduLite/Kudu.Core/Deployment/FetchDeploymentManager.cs:line 230
+   at Kudu.Core.Deployment.FetchDeploymentManager.&lt;&gt;c__DisplayClass17_0.&lt;&lt;FetchDeploy&gt;b__0&gt;d.MoveNext() in /tmp/KuduLite/Kudu.Core/Deployment/FetchDeploymentManager.cs:line 131
+--- End of stack trace from previous location ---
+   at Kudu.Core.Deployment.FetchDeploymentManager.FetchDeploy(DeploymentInfoBase deployInfo, Boolean asyncRequested, Uri requestUri, String targetBranch) in /tmp/KuduLite/Kudu.Core/Deployment/FetchDeploymentManager.cs:line 124
+   at Kudu.Services.Deployment.PushDeploymentController.PushDeployAsync(ArtifactDeploymentInfo deploymentInfo, Boolean isAsync, HttpContext context, JObject requestJson) in /tmp/KuduLite/Kudu.Services/Deployment/PushDeploymentController.cs:line 804
+   at Kudu.Services.Deployment.PushDeploymentController.OneDeploy(String type, Boolean async, String path, Nullable`1 restart, Nullable`1 clean, Boolean ignoreStack, Boolean trackDeploymentProgress, Boolean trackStatus, Boolean reset) in /tmp/KuduLite/Kudu.Services/Deployment/PushDeploymentController.cs:line 624
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.&lt;InvokeActionMethodAsync&gt;g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.&lt;InvokeNextActionFilterAsync&gt;g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State&amp; next, Scope&amp; scope, Object&amp; state, Boolean&amp; isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.&lt;InvokeInnerFilterAsync&gt;g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.&lt;InvokeNextResourceFilter&gt;g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State&amp; next, Scope&amp; scope, Object&amp; state, Boolean&amp; isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.&lt;InvokeFilterPipelineAsync&gt;g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.&lt;InvokeAsync&gt;g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.&lt;InvokeAsync&gt;g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Kudu.Services.Web.Startup.&lt;&gt;c.&lt;&lt;Configure&gt;b__11_7&gt;d.MoveNext() in /tmp/KuduLite/Kudu.Services.Web/Startup.cs:line 437
+--- End of stack trace from previous location ---
+   at Kudu.Services.Web.Tracing.TraceMiddleware.Invoke(HttpContext context) in /tmp/KuduLite/Kudu.Services.Web/Tracing/TraceMiddleware.cs:line 101" innerText="npm notice
+npm notice New major version of npm available! 10.9.7 -&gt; 11.17.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.17.0
+npm notice To update run: npm install -g npm@11.17.0
+npm notice
+
+&gt; Build error occurred
+Error: Turbopack build failed with 1 errors:
+./src/app/globals.css
+Error evaluating Node.js code
+Error: Cannot find module &apos;@tailwindcss/postcss&apos;
+Require stack:
+- /tmp/8decebdba7dec45/.next/build/chunks/[root-of-the-server]__0oj80bi._.js
+- /tmp/8decebdba7dec45/.next/build/chunks/[turbopack]_runtime.js
+- /tmp/8decebdba7dec45/.next/build/56416d4ae4ce586f.js
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)]
+    [at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)]
+    [at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)]
+    [at Function._load (node:internal/modules/cjs/loader:1192:37)]
+    [at TracingChannel.traceSync (node:diagnostics_channel:328:14)]
+    [at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)]
+    [at Module.require (node:internal/modules/cjs/loader:1463:12)]
+    [at require (node:internal/modules/helpers:147:16)]
+    at require (turbopack:///[turbopack-node]/transforms/postcss.ts:49:25) [/tmp/8decebdba7dec45/.next/build/chunks/[root-of-the-server]__0oj80bi._.js:134:33]
+    [at &lt;anonymous&gt;]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+
+
+    at require (turbopack:///[turbopack-node]/transforms/postcss.ts:49:25) [/tmp/8decebdba7dec45/.next/build/chunks/[root-of-the-server]__0oj80bi._.js:134:33])
+/bin/bash -c &quot;oryx build /tmp/zipdeploy/extracted -o /home/site/wwwroot --platform nodejs --platform-version 22 -p virtualenv_name= --log-file /tmp/build-debug.log  -i /tmp/8decebdba7dec45 -p compress_node_modules=tar-gz | tee /tmp/oryx-build.log ; exit $PIPESTATUS &quot;" innerStackTrace="   at Kudu.Core.Infrastructure.Executable.ExecuteInternal(ITracer tracer, Func`2 onWriteOutput, Func`2 onWriteError, CancellationToken token, Encoding encoding, String arguments, Object[] args) in /tmp/KuduLite/Kudu.Core/Infrastructure/Executable.cs:line 239
+   at Kudu.Core.Infrastructure.Executable.ExecuteWithProgressWriter(ILogger logger, ITracer tracer, CancellationToken token, String arguments, Object[] args) in /tmp/KuduLite/Kudu.Core/Infrastructure/Executable.cs:line 118
+   at Kudu.Core.Deployment.Generator.ExternalCommandBuilder.RunCommand(DeploymentContext context, String command, Boolean ignoreManifest, CancellationToken token, String message, ILogger internalLogger) in /tmp/KuduLite/Kudu.Core/Deployment/Generator/ExternalCommandBuilder.cs:line 145
+   at Kudu.Core.Deployment.Generator.OryxBuilder.RunBuildCommand(IOryxArguments args, DeploymentContext context, CancellationToken token) in /tmp/KuduLite/Kudu.Core/Deployment/Generator/OryxBuilder.cs:line 295
+   at Kudu.Core.Deployment.Generator.OryxBuilder.Build(DeploymentContext context, CancellationToken token) in /tmp/KuduLite/Kudu.Core/Deployment/Generator/OryxBuilder.cs:line 136
+   at Kudu.Core.Deployment.DeploymentManager.Build(ChangeSet changeSet, ITracer tracer, IDisposable deployStep, IRepository repository, DeploymentInfoBase deploymentInfo, DeploymentAnalytics deploymentAnalytics, Boolean fullBuildByDefault, CancellationToken cancellationToken) in /tmp/KuduLite/Kudu.Core/Deployment/DeploymentManager.cs:line 771
+   at Kudu.Core.Deployment.DeploymentManager.Build(ChangeSet changeSet, ITracer tracer, IDisposable deployStep, IRepository repository, DeploymentInfoBase deploymentInfo, DeploymentAnalytics deploymentAnalytics, Boolean fullBuildByDefault, CancellationToken cancellationToken) in /tmp/KuduLite/Kudu.Core/Deployment/DeploymentManager.cs:line 840
+   at Kudu.Core.Deployment.DeploymentManager.DeployAsync(IRepository repository, ChangeSet changeSet, String deployer, Boolean clean, DeploymentInfoBase deploymentInfo, Boolean needFileUpdate, Boolean fullBuildByDefault) in /tmp/KuduLite/Kudu.Core/Deployment/DeploymentManager.cs:line 266" /><!-- duration: 2ms -->
+      <step title="Incoming Request" date="2026-06-20T11:23:51.224" url="/Error?type=zip" method="POST" type="request" pid="833,1,5" Accept="*/*" Host="dicto-g0f3eub8h6b4f6f0.scm.centralindia-01.azurewebsites.net" User-Agent="AZURECLI/2.87.0 (HOMEBREW)" Accept-Encoding="gzip, deflate" Authorization="Bea..." Cache-Control="no-cache" Content-Type="application/octet-stream" Cookie="ARRAffinity=09f58ebce3a37c8a17f005e20914cff492ec015f1986abcf69e8075ed4dc8f8f; ARRAffinitySameSite=09f58ebce3a37c8a17f005e20914cff492ec015f1986abcf69e8075ed4dc8f8f" Content-Length="215372" x-ms-client-request-id="c9e4dc3a-6c99-11f1-b816-3a75b05bc1ba" x-ms-artifact-checksum="225906b3b38c0b11ce65ffc7d7f7e43c12f7bc906bd74df58fafcc8e983b4095" X-ARR-LOG-ID="c9e4dc3a-6c99-11f1-b816-3a75b05bc1ba" CLIENT-IP="43.250.41.145:62145" X-SITE-DEPLOYMENT-ID="dicto" WAS-DEFAULT-HOSTNAME="dicto-g0f3eub8h6b4f6f0.scm.centralindia-01.azurewebsites.net" X-Forwarded-Proto="https" X-AppService-Proto="https" X-Forwarded-TlsVersion="1.3" X-WAWS-Unencoded-URL="/api/publish?type=zip" X-Client-IP="43.250.41.145" X-Client-Port="62145" >
+        <step title="Outgoing response" date="2026-06-20T11:23:51.539" type="response" statusCode="400" statusText="BadRequest" /><!-- duration: 11ms -->
+      </step><!-- duration: 356ms -->

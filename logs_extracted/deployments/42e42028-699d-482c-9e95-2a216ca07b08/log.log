@@ -1,0 +1,125 @@
+2026-06-20T15:16:01.6374191Z,Updating submodules.,33ad6624-0e75-49ae-b8b3-67bf3dca8581,0
+2026-06-20T15:16:03.0172818Z,Preparing deployment for commit id '42e42028-6'.,6861ed47-9723-4a08-b988-a1c9835777b7,0
+2026-06-20T15:16:03.7440192Z,PreDeployment: context.CleanOutputPath False,04df2316-f937-464b-95bc-3293d269f4aa,0
+2026-06-20T15:16:04.0745938Z,PreDeployment: context.OutputPath /home/site/wwwroot,74cb01c9-25db-4721-a1d0-c7a7bd0d0e7d,0
+2026-06-20T15:16:04.3675936Z,Repository path is /tmp/zipdeploy/extracted,6ad64289-4612-4cce-a0d8-a3a1b04dd699,0
+2026-06-20T15:16:04.6373071Z,Running oryx build...,9df70feb-9cbc-4afb-9553-587ba3d7bef2,0
+	2026-06-20T15:16:04.7476105Z,Command: oryx build /tmp/zipdeploy/extracted -o /home/site/wwwroot --platform nodejs --platform-version 22 -p virtualenv_name= --log-file /tmp/build-debug.log  -i /tmp/8deceded7f08e16 -p compress_node_modules=tar-gz | tee /tmp/oryx-build.log,,0
+	2026-06-20T15:16:07.5164720Z,Operation performed by Microsoft Oryx&comma; https://github.com/Microsoft/Oryx,,0
+	2026-06-20T15:16:07.5975556Z,You can report issues at https://github.com/Microsoft/Oryx/issues,,0
+	2026-06-20T15:16:07.6378425Z,,,0
+	2026-06-20T15:16:07.6684697Z,Oryx Version: 0.2.20260513.1+5c94136d0d5c06204a00d688dc7aea902452e52c&comma; Commit: 5c94136d0d5c06204a00d688dc7aea902452e52c&comma; ReleaseTagName: 20260513.1,,0
+	2026-06-20T15:16:07.6972924Z,,,0
+	2026-06-20T15:16:07.7168859Z,Build Operation ID: bf22874e28f03c7f,,0
+	2026-06-20T15:16:07.7302792Z,Repository Commit : 42e42028-699d-482c-9e95-2a216ca07b08,,0
+	2026-06-20T15:16:07.7682575Z,OS Type           : bookworm,,0
+	2026-06-20T15:16:07.8484182Z,Image Type        : githubactions,,0
+	2026-06-20T15:16:07.9198162Z,,,0
+	2026-06-20T15:16:07.9415254Z,Primary SDK Storage URL: https://oryx-cdn.microsoft.io,,0
+	2026-06-20T15:16:08.0005421Z,Backup SDK Storage URL: ,,0
+	2026-06-20T15:16:08.0416817Z,ACR SDK Registry URL: (not set),,0
+	2026-06-20T15:16:08.0709249Z,SDK provider status:,,0
+	2026-06-20T15:16:08.1122843Z,  External ACR SDK provider: Enabled,,0
+	2026-06-20T15:16:08.1718481Z,  External SDK provider: Enabled,,0
+	2026-06-20T15:16:08.2232901Z,  Direct ACR SDK provider: Disabled,,0
+	2026-06-20T15:16:08.2523746Z,  Blob SDK provider: Enabled,,0
+	2026-06-20T15:16:08.3338611Z,External ACR SDK provider is enabled. Only using user-specified platform: nodejs,,0
+	2026-06-20T15:16:08.4442910Z,Detecting platforms...,,0
+	2026-06-20T15:16:13.8152750Z,External ACR provider resolved version '22.22.2' for nodejs.,,0
+	2026-06-20T15:16:13.9086399Z,Version resolved using external ACR SDK provider.,,0
+	2026-06-20T15:16:13.9578603Z,Detected following platforms:,,0
+	2026-06-20T15:16:14.0277046Z,  nodejs: 22.22.2,,0
+	2026-06-20T15:16:14.0575031Z,Requesting SDK from ACR via external provider: nodejs 22.22.2 (bookworm),,0
+	2026-06-20T15:16:20.6617842Z,Successfully pulled SDK from ACR via external provider: nodejs 22.22.2,,0
+	2026-06-20T15:16:20.7714055Z,SDK for 'nodejs' version '22.22.2' fetched via external ACR provider.,,0
+	2026-06-20T15:16:20.8138138Z,Version '22.22.2' of platform 'nodejs' is not installed. Generating script to install it...,,0
+	2026-06-20T15:16:21.1055033Z,Detected the following frameworks: Typescript&comma;Next.js,,0
+	2026-06-20T15:16:21.8608015Z,,,0
+	2026-06-20T15:16:22.0802869Z,Using intermediate directory '/tmp/8deceded7f08e16'.,,0
+	2026-06-20T15:16:22.1310558Z,,,0
+	2026-06-20T15:16:22.1615883Z,Copying files to the intermediate directory...,,0
+	2026-06-20T15:16:22.3312527Z,Copying files to intermediate directory done in 0 sec(s).,,0
+	2026-06-20T15:16:22.4008654Z,,,0
+	2026-06-20T15:16:22.4521411Z,Source directory     : /tmp/8deceded7f08e16,,0
+	2026-06-20T15:16:22.5649325Z,Destination directory: /home/site/wwwroot,,0
+	2026-06-20T15:16:22.6653379Z,,,0
+	2026-06-20T15:16:22.7126505Z,Installing platform...,,0
+	2026-06-20T15:16:22.7942108Z,,,0
+	2026-06-20T15:16:22.8254288Z,Downloading and extracting 'nodejs' version '22.22.2' to '/tmp/oryx/platforms/nodejs/22.22.2'...,,0
+	2026-06-20T15:16:22.8950754Z,Detected image debian flavor: bookworm.,,0
+	2026-06-20T15:16:22.9858174Z,SDK binary download was skipped. Looking for cached tarball...,,0
+	2026-06-20T15:16:23.0549557Z,Found tarball at /var/OryxAcrSdks/nodejs/nodejs-bookworm-22.22.2.tar.gz,,0
+	2026-06-20T15:16:33.8238247Z,Successfully extracted nodejs version 22.22.2 from cached tarball.,,0
+	2026-06-20T15:16:33.9426691Z,,,0
+	2026-06-20T15:16:34.0027777Z,Platform installation done in 11 sec(s).,,0
+	2026-06-20T15:16:34.9721842Z,Running build script snippets...,,0
+	2026-06-20T15:16:35.0730555Z,Removing existing manifest file,,0
+	2026-06-20T15:16:35.0942852Z,Creating directory for command manifest file if it does not exist,,0
+	2026-06-20T15:16:35.1329875Z,Creating a manifest file...,,0
+	2026-06-20T15:16:35.1545682Z,Node Build Command Manifest file created.,,0
+	2026-06-20T15:16:35.1745661Z,,,0
+	2026-06-20T15:16:35.2432646Z,Using Node version:,,0
+	2026-06-20T15:16:35.2849455Z,v22.22.2,,0
+	2026-06-20T15:16:35.3355508Z,,,0
+	2026-06-20T15:16:35.3942418Z,Using Npm version:,,0
+	2026-06-20T15:16:36.6129082Z,npm warn config production Use `--omit=dev` instead.,,1
+	2026-06-20T15:16:36.6333633Z,10.9.7,,0
+	2026-06-20T15:16:36.9652959Z,,,0
+	2026-06-20T15:16:37.0241432Z,Running 'npm install'...,,0
+	2026-06-20T15:16:37.0850798Z,,,0
+	2026-06-20T15:16:37.8792758Z,npm warn config production Use `--omit=dev` instead.,,1
+	2026-06-20T15:17:54.1141564Z,npm notice This endpoint is being retired. Use the bulk advisory endpoint instead. See the following docs for more info: https://api-docs.npmjs.com/#tag/Audit,,1
+	2026-06-20T15:19:05.8114728Z,,,0
+	2026-06-20T15:19:05.8612380Z,added 377 packages in 2m,,0
+	2026-06-20T15:19:05.9011749Z,,,0
+	2026-06-20T15:19:05.9228737Z,148 packages are looking for funding,,0
+	2026-06-20T15:19:05.9811568Z,  run `npm fund` for details,,0
+	2026-06-20T15:19:06.4061389Z,,,0
+	2026-06-20T15:19:06.4458037Z,Running 'npm run build'...,,0
+	2026-06-20T15:19:06.5343548Z,,,0
+	2026-06-20T15:19:07.1504410Z,npm warn config production Use `--omit=dev` instead.,,1
+	2026-06-20T15:19:07.3902532Z,,,0
+	2026-06-20T15:19:07.4298043Z,> temp-next-app@0.1.0 build,,0
+	2026-06-20T15:19:07.4826209Z,> next build,,0
+	2026-06-20T15:19:07.6615380Z,,,0
+	2026-06-20T15:19:11.0476047Z,Attention: Next.js now collects completely anonymous telemetry regarding usage.,,0
+	2026-06-20T15:19:11.2475089Z,This information is used to shape Next.js' roadmap and prioritize features.,,0
+	2026-06-20T15:19:11.8518066Z,You can learn more&comma; including how to opt-out if you'd not like to participate in this anonymous program&comma; by visiting the following URL:,,0
+	2026-06-20T15:19:11.9418711Z,https://nextjs.org/telemetry,,0
+	2026-06-20T15:19:12.0436644Z,,,0
+	2026-06-20T15:19:12.2236782Z,▲ Next.js 16.2.9 (Turbopack),,0
+	2026-06-20T15:19:12.6368062Z,- Environments: .env.local,,0
+	2026-06-20T15:19:12.7665189Z,,,0
+	2026-06-20T15:19:12.9391475Z,  Creating an optimized production build ...,,0
+	2026-06-20T15:21:05.6566805Z,✓ Compiled successfully in 111s,,0
+	2026-06-20T15:21:05.8871623Z,  Running TypeScript ...,,0
+	2026-06-20T15:22:13.0338629Z,  Finished TypeScript in 67s ...,,0
+	2026-06-20T15:22:13.3157388Z,  Collecting page data using 1 worker ...,,0
+	2026-06-20T15:22:23.0936586Z,  Generating static pages using 1 worker (0/15) ...,,0
+	2026-06-20T15:22:24.5920738Z,  Generating static pages using 1 worker (3/15) ,,0
+	2026-06-20T15:22:29.2506848Z,  Generating static pages using 1 worker (7/15) ,,0
+	2026-06-20T15:22:32.6897334Z,  Generating static pages using 1 worker (11/15) ,,0
+	2026-06-20T15:22:32.8029673Z,✓ Generating static pages using 1 worker (15/15) in 9.7s,,0
+	2026-06-20T15:22:33.0130288Z,  Finalizing page optimization ...,,0
+	2026-06-20T15:22:33.3853103Z,,,0
+	2026-06-20T15:22:33.6654189Z,Route (app),,0
+	2026-06-20T15:22:33.9070638Z,┌ ○ /,,0
+	2026-06-20T15:22:34.0489668Z,├ ○ /_not-found,,0
+	2026-06-20T15:22:34.1511788Z,├ ○ /admin,,0
+	2026-06-20T15:22:34.3508656Z,├ ƒ /api/analytics,,0
+	2026-06-20T15:22:34.4201899Z,├ ƒ /api/compare,,0
+	2026-06-20T15:22:34.4804849Z,├ ƒ /api/recommend,,0
+	2026-06-20T15:22:34.6017389Z,├ ƒ /api/search,,0
+	2026-06-20T15:22:34.7037923Z,├ ƒ /api/seed,,0
+	2026-06-20T15:22:34.7839995Z,├ ƒ /api/voice,,0
+	2026-06-20T15:22:34.9426841Z,├ ○ /dashboard,,0
+	2026-06-20T15:22:35.0534207Z,├ ○ /dashboard/favorites,,0
+	2026-06-20T15:22:35.2063954Z,├ ○ /login,,0
+	2026-06-20T15:22:35.3753978Z,└ ○ /onboarding,,0
+	2026-06-20T15:22:35.4570255Z,,,0
+	2026-06-20T15:22:35.5790807Z,,,0
+	2026-06-20T15:22:35.6699164Z,○  (Static)   prerendered as static content,,0
+	2026-06-20T15:22:35.8004611Z,ƒ  (Dynamic)  server-rendered on demand,,0
+	2026-06-20T15:22:35.9594018Z,,,0
+	2026-06-20T15:22:36.0795525Z,,,0
+	2026-06-20T15:22:36.1297682Z,Zipping existing node_modules folder...,,0

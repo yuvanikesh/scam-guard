@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Syne:wght@400..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Merged Palette */
+  --color-bg-primary: #131313; /* Elva Surface Black */
+  --color-bg-secondary: #000000; /* Pure Black Base */
+  --color-bg-tertiary: #141414; /* Elva Near Black */
+  
+  --color-surface-primary: #171717;
+  --color-surface-secondary: #1E1E1E;
+
+  --color-text-primary: #FFFFFF; /* Pure White */
+  --color-text-secondary: #b3b3b3; /* Elva Mid Gray */
+  --color-text-muted: #4d4d4d; /* Elva Dark Gray */
+
+  /* Units Vivid Accent Colors */
+  --color-coral-orange: #ff5c38;
+  --color-amber-yellow: #ffb200;
+  --color-vivid-purple: #ab54f7;
+  --color-warm-cream: #f4e9e1;
+  --color-deep-blue: #004e9b;
+  --color-light-gray: #f5f5f5;
+
+  /* Legacy semantic overrides to maintain compatibility */
+  --color-accent-indigo: #ff5c38;
+  --color-accent-violet: #ab54f7;
+  --color-success: #ffb200;
+  --color-warning: #ffb200;
+  --color-error: #ff5c38;
+  --color-info: #004e9b;
+
+  /* Merged Font Families */
+  --font-sans: "Plus Jakarta Sans", sans-serif; /* Aeonik Pro fallback */
+  --font-display: "Syne", sans-serif; /* Bunch fallback */
+  --font-serif: "Playfair Display", serif; /* Brand logo serif */
+
+  /* Merged Radii */
+  --radius-sm: 4px;
+  --radius-md: 15px;
+  --radius-lg: 16px;
+  --radius-rounded-sm: 10px;
+  --radius-rounded-md: 20px;
+  --radius-pill-default: 33.3px;
+  --radius-phone-mockup: 42px;
+  --radius-full-circle: 100px;
+  --radius-pill: 120px;
+
+}
+
+:root {
+  --background: #131313;
+  --foreground: #FFFFFF;
+
+  /* Spacing Grid (defined as CSS custom variables, not theme tokens, to avoid hijacking layout max-widths) */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-base: 16px;
+  --spacing-lg: 20px;
+  --spacing-xl: 24px;
+  --spacing-2xl: 28px;
+  --spacing-3xl: 32px;
+  --spacing-4xl: 40px;
+  --spacing-7xl: 80px;
+}
+
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar matching premium theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-surface-primary);
+  border-radius: var(--radius-small);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-surface-secondary);
+}

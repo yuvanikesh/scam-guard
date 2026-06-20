@@ -1,0 +1,209 @@
+{
+  "color": {
+    "Surface Black": {
+      "$type": "color",
+      "$value": "#131313",
+      "$description": "Primary page background, deep dark surface behind hero content"
+    },
+    "Near Black": {
+      "$type": "color",
+      "$value": "#141414",
+      "$description": "Card and section surface fills, slightly lighter than primary background"
+    },
+    "Pure White": {
+      "$type": "color",
+      "$value": "#ffffff",
+      "$description": "Primary headline text, body copy on dark backgrounds, nav labels, CTA text"
+    },
+    "Mid Gray": {
+      "$type": "color",
+      "$value": "#b3b3b3",
+      "$description": "Secondary body text, captions, supporting descriptive copy"
+    },
+    "Dark Gray": {
+      "$type": "color",
+      "$value": "#4d4d4d",
+      "$description": "Subtle dividers, border accents, muted UI elements"
+    },
+    "Light Gray": {
+      "$type": "color",
+      "$value": "#d9d9d9",
+      "$description": "Light border strokes, subtle separators"
+    },
+    "Pure Black": {
+      "$type": "color",
+      "$value": "#000000",
+      "$description": "Deep black fills, overlay backgrounds, logo badge background"
+    }
+  },
+  "typography": {
+    "Display Hero": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Neue Haas Grotesk Display Pro",
+        "fontSize": "104px",
+        "fontWeight": 400,
+        "lineHeight": "93.6px",
+        "letterSpacing": "-3.12px"
+      },
+      "$description": "Largest hero display text, full-bleed background text treatment"
+    },
+    "Display Large": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Neue Haas Grotesk Display Pro",
+        "fontSize": "42px",
+        "fontWeight": 400,
+        "lineHeight": "38px",
+        "letterSpacing": "-0.84px"
+      },
+      "$description": "Primary hero headline inside phone mockup, section headings"
+    },
+    "Display Medium": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Neue Haas Grotesk Display Pro",
+        "fontSize": "43px",
+        "fontWeight": 400,
+        "lineHeight": "47.3px",
+        "letterSpacing": "normal"
+      },
+      "$description": "Section-level headings, feature titles"
+    },
+    "Heading 2": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Neue Haas Grotesk Display Pro",
+        "fontSize": "28px",
+        "fontWeight": 400,
+        "lineHeight": "28px",
+        "letterSpacing": "normal"
+      },
+      "$description": "Card titles, sub-section headings"
+    },
+    "Body": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Neue Haas Grotesk Display Pro",
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "lineHeight": "20.8px",
+        "letterSpacing": "normal"
+      },
+      "$description": "Body copy, descriptive text, navigation labels"
+    },
+    "Caption / Label": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Neue Haas Grotesk Display Pro",
+        "fontSize": "13px",
+        "fontWeight": 400,
+        "lineHeight": "normal",
+        "letterSpacing": "normal"
+      },
+      "$description": "Small labels, badges, footer micro-text"
+    },
+    "Small Body": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Neue Haas Grotesk Display Pro",
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "lineHeight": "19.6px",
+        "letterSpacing": "normal"
+      },
+      "$description": "Secondary body text, supporting descriptions"
+    },
+    "Nav Label": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Neue Haas Grotesk Display Pro",
+        "fontSize": "16px",
+        "fontWeight": 500,
+        "lineHeight": "normal",
+        "letterSpacing": "-0.32px"
+      },
+      "$description": "Navigation CTA, interactive label text"
+    }
+  },
+  "spacing": {
+    "xs": {
+      "$type": "dimension",
+      "$value": "4px"
+    },
+    "sm": {
+      "$type": "dimension",
+      "$value": "8px"
+    },
+    "md": {
+      "$type": "dimension",
+      "$value": "12px"
+    },
+    "base": {
+      "$type": "dimension",
+      "$value": "16px"
+    },
+    "lg": {
+      "$type": "dimension",
+      "$value": "20px"
+    },
+    "xl": {
+      "$type": "dimension",
+      "$value": "24px"
+    },
+    "2xl": {
+      "$type": "dimension",
+      "$value": "28px"
+    },
+    "3xl": {
+      "$type": "dimension",
+      "$value": "32px"
+    },
+    "4xl": {
+      "$type": "dimension",
+      "$value": "35px"
+    },
+    "5xl": {
+      "$type": "dimension",
+      "$value": "40px"
+    },
+    "6xl": {
+      "$type": "dimension",
+      "$value": "42px"
+    },
+    "7xl": {
+      "$type": "dimension",
+      "$value": "80px"
+    }
+  },
+  "borderRadius": {
+    "sm": {
+      "$type": "dimension",
+      "$value": "4px"
+    },
+    "md": {
+      "$type": "dimension",
+      "$value": "15px"
+    },
+    "lg": {
+      "$type": "dimension",
+      "$value": "16px"
+    },
+    "xl": {
+      "$type": "dimension",
+      "$value": "28px"
+    },
+    "2xl": {
+      "$type": "dimension",
+      "$value": "31px"
+    },
+    "phone-mockup": {
+      "$type": "dimension",
+      "$value": "42px"
+    },
+    "pill": {
+      "$type": "dimension",
+      "$value": "120px"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+:root {
+  /* Colors */
+  --color-black-base: #000000;
+  --color-white-surface: #ffffff;
+  --color-coral-orange: #ff5c38;
+  --color-amber-yellow: #ffb200;
+  --color-vivid-purple: #ab54f7;
+  --color-warm-cream: #f4e9e1;
+  --color-near-black: #101010;
+  --color-deep-blue: #004e9b;
+  --color-light-gray: #f5f5f5;
+
+  /* Typography */
+  --font-display-hero-family: Bunch;
+  --font-display-hero-size: 36px;
+  --font-display-hero-weight: 850;
+  --font-display-hero-line-height: 39.6px;
+  --font-display-large-family: Bunch;
+  --font-display-large-size: 29.34px;
+  --font-display-large-weight: 850;
+  --font-display-large-line-height: 29.34px;
+  --font-display-medium-family: Bunch;
+  --font-display-medium-size: 22.67px;
+  --font-display-medium-weight: 850;
+  --font-display-medium-line-height: 22.67px;
+  --font-display-small-family: Bunch;
+  --font-display-small-size: 12px;
+  --font-display-small-weight: 850;
+  --font-display-small-line-height: 12px;
+  --font-body-default-family: Aeonik Pro;
+  --font-body-default-size: 16px;
+  --font-body-default-weight: 400;
+  --font-body-default-line-height: normal;
+  --font-body-small-family: Aeonik Pro;
+  --font-body-small-size: 14px;
+  --font-body-small-weight: 400;
+  --font-body-small-line-height: 16.8px;
+  --font-label-bold-family: Aeonik Pro;
+  --font-label-bold-size: 12px;
+  --font-label-bold-weight: 700;
+  --font-label-bold-line-height: 14.4px;
+  --font-body-bold-family: Aeonik Pro;
+  --font-body-bold-size: 14px;
+  --font-body-bold-weight: 700;
+  --font-body-bold-line-height: 16.8px;
+  --font-ui-default-bold-family: Aeonik Pro;
+  --font-ui-default-bold-size: 16px;
+  --font-ui-default-bold-weight: 700;
+  --font-ui-default-bold-line-height: 19.2px;
+  --font-utility-small-family: Roboto;
+  --font-utility-small-size: 11px;
+  --font-utility-small-weight: 400;
+  --font-utility-small-line-height: normal;
+
+  /* Spacing */
+  --spacing-xs: 5px;
+  --spacing-sm: 6px;
+  --spacing-md-sm: 10px;
+  --spacing-md: 12px;
+  --spacing-md-lg: 15px;
+  --spacing-lg: 20px;
+  --spacing-xl: 25px;
+  --spacing-2xl: 30px;
+  --spacing-3xl: 32px;
+  --spacing-4xl: 40px;
+  --spacing-inner-wrap: 26.7px;
+
+  /* Border Radius */
+  --radius-pill-default: 33.3px;
+  --radius-rounded-md: 20px;
+  --radius-rounded-sm: 10px;
+  --radius-full-circle: 100px;
+  --radius-pill-large: 66.7px;
+  --radius-subtle: 5px;
+  --radius-none: 0px;
+
+}

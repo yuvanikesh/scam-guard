@@ -1,0 +1,41 @@
+<step title="Incoming Request" date="2026-06-20T15:15:55.601" instance="09f58e" url="/api/publish?type=zip" method="POST" type="request" pid="833,1,5" Accept="*/*" Host="dicto-g0f3eub8h6b4f6f0.scm.centralindia-01.azurewebsites.net" User-Agent="AZURECLI/2.87.0 (HOMEBREW)" Accept-Encoding="gzip, deflate" Authorization="Bea..." Cache-Control="no-cache" Content-Type="application/octet-stream" Cookie="ARRAffinity=09f58ebce3a37c8a17f005e20914cff492ec015f1986abcf69e8075ed4dc8f8f; ARRAffinitySameSite=09f58ebce3a37c8a17f005e20914cff492ec015f1986abcf69e8075ed4dc8f8f" Content-Length="215372" x-ms-client-request-id="e9d71c08-6cba-11f1-acff-3a75b05bc1ba" x-ms-artifact-checksum="225906b3b38c0b11ce65ffc7d7f7e43c12f7bc906bd74df58fafcc8e983b4095" X-ARR-LOG-ID="e9d71c08-6cba-11f1-acff-3a75b05bc1ba" CLIENT-IP="175.101.106.18:56373" X-SITE-DEPLOYMENT-ID="dicto" WAS-DEFAULT-HOSTNAME="dicto-g0f3eub8h6b4f6f0.scm.centralindia-01.azurewebsites.net" X-Forwarded-Proto="https" X-AppService-Proto="https" X-Forwarded-TlsVersion="1.3" X-WAWS-Unencoded-URL="/api/publish?type=zip" X-Client-IP="175.101.106.18" X-Client-Port="56373" >
+  <step title="OneDeploy" date="2026-06-20T15:15:55.731" >
+    <step title="None repository commit" date="2026-06-20T15:15:55.747" >
+      <step title="Commit id: 42e42028-699d-482c-9e95-2a216ca07b08" date="2026-06-20T15:15:55.750" Message="N/A" AuthorName="N/A" AuthorEmail="N/A" /><!-- duration: 5ms -->
+    </step><!-- duration: 9ms -->
+    <step title="Starting PushDeployAsync" date="2026-06-20T15:15:55.758" /><!-- duration: 2ms -->
+    <step title="Writing artifact to /tmp/zipdeploy/e147300f-a360-48dd-ab07-f8d29e429091.zip" date="2026-06-20T15:15:55.775" >
+      <step title="Writing multipart request body to /tmp/zipdeploy/e147300f-a360-48dd-ab07-f8d29e429091.zip" date="2026-06-20T15:15:55.781" /><!-- duration: 3ms -->
+      <step title="Writing zip file to /tmp/zipdeploy/e147300f-a360-48dd-ab07-f8d29e429091.zip" date="2026-06-20T15:15:55.791" /><!-- duration: 131ms -->
+    </step><!-- duration: 177ms -->
+    <step title="Attempting to fetch target branch HEAD" date="2026-06-20T15:15:55.993" /><!-- duration: 2ms -->
+    <step title="Acquiring Deployment Lock" date="2026-06-20T15:15:56.004" /><!-- duration: 11ms -->
+    <step title="Acquired Deployment Lock" date="2026-06-20T15:15:56.091" /><!-- duration: 2ms -->
+    <step title="Performing fetch based deployment" date="2026-06-20T15:15:56.098" >
+      <step title="Creating temporary deployment" date="2026-06-20T15:15:56.105" /><!-- duration: 69ms -->
+      <step title="Releasing Deployment Lock" date="2026-06-20T15:15:57.673" /><!-- duration: 19ms -->
+      <step title="Cleaning up temp folders from previous zip deployments and extracting pushed zip file /tmp/zipdeploy/e147300f-a360-48dd-ab07-f8d29e429091.zip (0.21 MB) to /tmp/zipdeploy/extracted" date="2026-06-20T15:15:57.885" >
+        <step title="ChmodRecursive Process exited with total time taken in ms: 373" date="2026-06-20T15:15:58.720" /><!-- duration: 29ms -->
+      </step><!-- duration: 874ms -->
+      <step title="None repository commit" date="2026-06-20T15:15:58.770" >
+        <step title="Commit id: 42e42028-699d-482c-9e95-2a216ca07b08" date="2026-06-20T15:15:58.789" Message="OneDeploy" AuthorName="N/A" AuthorEmail="N/A" /><!-- duration: 12ms -->
+      </step><!-- duration: 40ms -->
+      <step title="Deployment timer started" date="2026-06-20T15:16:00.863" >
+        <step title="DeploymentManager.Deploy(id:42e42028-699d-482c-9e95-2a216ca07b08)" date="2026-06-20T15:16:00.884" >
+          <step title="Collecting changeset information" date="2026-06-20T15:16:00.924" /><!-- duration: 311ms -->
+          <step title="Updating submodules" date="2026-06-20T15:16:01.357" /><!-- duration: 1400ms -->
+          <step title="Determining deployment builder" date="2026-06-20T15:16:03.298" >
+            <step title="Builder is OryxBuilder" date="2026-06-20T15:16:03.348" /><!-- duration: 11ms -->
+          </step><!-- duration: 73ms -->
+          <step title="PreDeployment: context.CleanOutputPath False" date="2026-06-20T15:16:03.511" >
+            <step title="PreDeployment: context.OutputPath /home/site/wwwroot" date="2026-06-20T15:16:03.823" >
+              <step title="Building" date="2026-06-20T15:16:04.156" >
+                <step title="Executing external process" date="2026-06-20T15:16:04.898" type="process" path="bash" arguments="-c &quot;oryx build /tmp/zipdeploy/extracted -o /home/site/wwwroot --platform nodejs --platform-version 22 -p virtualenv_name= --log-file /tmp/build-debug.log  -i /tmp/8deceded7f08e16 -p compress_node_modules=tar-gz | tee /tmp/oryx-build.log ; exit $PIPESTATUS &quot;" >
+                  <step title="Cpu: npm install(979,26.900s)+build.sh(886,0.080s)+oryx(863,9.130s)+tee(864,0.010s)+bash(862,0.000s)=total(36.120s)" date="2026-06-20T15:17:39.472" /><!-- duration: 11ms -->
+                  <step title="bash: no io activity for 60s, prev-cpu=-1.000s, current-cpu=36.120s" date="2026-06-20T15:17:39.552" /><!-- duration: 23ms -->
+                  <step title="Cpu: npm install(979,72.800s)+build.sh(886,0.080s)+oryx(863,10.020s)+tee(864,0.010s)+bash(862,0.000s)=total(82.910s)" date="2026-06-20T15:18:55.389" /><!-- duration: 13ms -->
+                  <step title="bash: no io activity for 61s, prev-cpu=-1.000s, current-cpu=82.910s" date="2026-06-20T15:18:55.431" /><!-- duration: 10ms -->
+                  <step title="Cpu: node(1121,1.930s)+node(1084,44.280s)+sh(1083,0.010s)+npm run build(1072,0.720s)+build.sh(886,0.080s)+oryx(863,10.560s)+tee(864,0.010s)+bash(862,0.000s)=total(57.590s)" date="2026-06-20T15:20:13.176" /><!-- duration: 10ms -->
+                  <step title="bash: no io activity for 60s, prev-cpu=-1.000s, current-cpu=57.590s" date="2026-06-20T15:20:13.207" /><!-- duration: 19ms -->
+                  <step title="Cpu: node(1121,2.180s)+node(1168,41.880s)+node(1084,83.850s)+sh(1083,0.010s)+npm run build(1072,0.720s)+build.sh(886,0.080s)+oryx(863,11.500s)+tee(864,0.010s)+bash(862,0.000s)=total(140.160s)" date="2026-06-20T15:22:07.637" /><!-- duration: 41ms -->
+                  <step title="bash: no io activity for 60s, prev-cpu=-1.000s, current-cpu=140.160s" date="2026-06-20T15:22:07.758" /><!-- duration: 42ms -->

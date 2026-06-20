@@ -1,0 +1,178 @@
+2026-06-20T11:18:56  Fetching changes.
+2026-06-20T11:18:56    Starting  LocalZipHandler
+2026-06-20T11:18:56    Cleaning up temp folders from previous zip deployments and extracting pushed zip file /tmp/zipdeploy/b05a2838-9cca-4eaa-83c4-9c6c3e84b515.zip (0.21 MB) to /tmp/zipdeploy/extracted
+2026-06-20T11:19:00  Updating submodules.
+2026-06-20T11:19:00  Preparing deployment for commit id 'f40b7138-1'.
+2026-06-20T11:19:00  PreDeployment: context.CleanOutputPath False
+2026-06-20T11:19:00  PreDeployment: context.OutputPath /home/site/wwwroot
+2026-06-20T11:19:01  Repository path is /tmp/zipdeploy/extracted
+2026-06-20T11:19:01  Running oryx build...
+2026-06-20T11:19:01    Command: oryx build /tmp/zipdeploy/extracted -o /home/site/wwwroot --platform nodejs --platform-version 22 -p virtualenv_name= --log-file /tmp/build-debug.log  -i /tmp/8decebdba7dec45 -p compress_node_modules=tar-gz | tee /tmp/oryx-build.log
+2026-06-20T11:19:03    Operation performed by Microsoft Oryx, https://github.com/Microsoft/Oryx
+2026-06-20T11:19:04    You can report issues at https://github.com/Microsoft/Oryx/issues
+2026-06-20T11:19:04    
+2026-06-20T11:19:04    Oryx Version: 0.2.20260513.1+5c94136d0d5c06204a00d688dc7aea902452e52c, Commit: 5c94136d0d5c06204a00d688dc7aea902452e52c, ReleaseTagName: 20260513.1
+2026-06-20T11:19:04    
+2026-06-20T11:19:04    Build Operation ID: d58c5e5232187c18
+2026-06-20T11:19:04    Repository Commit : f40b7138-1072-4cf5-8a39-fd7dc0d7170b
+2026-06-20T11:19:04    OS Type           : bookworm
+2026-06-20T11:19:04    Image Type        : githubactions
+2026-06-20T11:19:04    
+2026-06-20T11:19:04    Primary SDK Storage URL: https://oryx-cdn.microsoft.io
+2026-06-20T11:19:04    Backup SDK Storage URL: 
+2026-06-20T11:19:04    ACR SDK Registry URL: (not set)
+2026-06-20T11:19:04    SDK provider status:
+2026-06-20T11:19:04      External ACR SDK provider: Enabled
+2026-06-20T11:19:04      External SDK provider: Enabled
+2026-06-20T11:19:04      Direct ACR SDK provider: Disabled
+2026-06-20T11:19:04      Blob SDK provider: Enabled
+2026-06-20T11:19:04    External ACR SDK provider is enabled. Only using user-specified platform: nodejs
+2026-06-20T11:19:04    Detecting platforms...
+2026-06-20T11:19:16    External ACR provider resolved version '22.22.2' for nodejs.
+2026-06-20T11:19:16    Version resolved using external ACR SDK provider.
+2026-06-20T11:19:16    Detected following platforms:
+2026-06-20T11:19:16      nodejs: 22.22.2
+2026-06-20T11:19:16    Requesting SDK from ACR via external provider: nodejs 22.22.2 (bookworm)
+2026-06-20T11:19:20    Successfully pulled SDK from ACR via external provider: nodejs 22.22.2
+2026-06-20T11:19:20    SDK for 'nodejs' version '22.22.2' fetched via external ACR provider.
+2026-06-20T11:19:20    Version '22.22.2' of platform 'nodejs' is not installed. Generating script to install it...
+2026-06-20T11:19:21    Detected the following frameworks: Typescript,Next.js
+2026-06-20T11:19:22    
+2026-06-20T11:19:22    Using intermediate directory '/tmp/8decebdba7dec45'.
+2026-06-20T11:19:22    
+2026-06-20T11:19:22    Copying files to the intermediate directory...
+2026-06-20T11:19:22    Copying files to intermediate directory done in 0 sec(s).
+2026-06-20T11:19:22    
+2026-06-20T11:19:22    Source directory     : /tmp/8decebdba7dec45
+2026-06-20T11:19:23    Destination directory: /home/site/wwwroot
+2026-06-20T11:19:23    
+2026-06-20T11:19:23    Installing platform...
+2026-06-20T11:19:23    
+2026-06-20T11:19:23    Downloading and extracting 'nodejs' version '22.22.2' to '/tmp/oryx/platforms/nodejs/22.22.2'...
+2026-06-20T11:19:23    Detected image debian flavor: bookworm.
+2026-06-20T11:19:23    SDK binary download was skipped. Looking for cached tarball...
+2026-06-20T11:19:23    Found tarball at /var/OryxAcrSdks/nodejs/nodejs-bookworm-22.22.2.tar.gz
+2026-06-20T11:19:34    Successfully extracted nodejs version 22.22.2 from cached tarball.
+2026-06-20T11:19:34    
+2026-06-20T11:19:35    Platform installation done in 12 sec(s).
+2026-06-20T11:19:36    Running build script snippets...
+2026-06-20T11:19:36    Removing existing manifest file
+2026-06-20T11:19:36    Creating directory for command manifest file if it does not exist
+2026-06-20T11:19:36    Creating a manifest file...
+2026-06-20T11:19:36    Node Build Command Manifest file created.
+2026-06-20T11:19:36    
+2026-06-20T11:19:36    Using Node version:
+2026-06-20T11:19:36    v22.22.2
+2026-06-20T11:19:36    
+2026-06-20T11:19:36    Using Npm version:
+2026-06-20T11:19:39    10.9.7
+2026-06-20T11:19:39    
+2026-06-20T11:19:39    Running 'npm install'...
+2026-06-20T11:19:39    
+2026-06-20T11:21:08    
+2026-06-20T11:21:08    added 40 packages, and audited 41 packages in 1m
+2026-06-20T11:21:08    
+2026-06-20T11:21:08    8 packages are looking for funding
+2026-06-20T11:21:08      run `npm fund` for details
+2026-06-20T11:21:09    
+2026-06-20T11:21:09    2 moderate severity vulnerabilities
+2026-06-20T11:21:09    
+pm notice
+2026-06-20T11:21:09    npm notice New major version of npm available! 10.9.7 -> 11.17.0
+2026-06-20T11:21:09    To address all issues (including breaking changes), run:
+2026-06-20T11:21:09    npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.17.0
+2026-06-20T11:21:09      npm audit fix --force
+2026-06-20T11:21:09    npm notice To update run: npm install -g npm@11.17.0
+2026-06-20T11:21:09    
+2026-06-20T11:21:09    npm notice
+2026-06-20T11:21:09    Run `npm audit` for details.
+2026-06-20T11:21:09    
+2026-06-20T11:21:09    Running 'npm run build'...
+2026-06-20T11:21:09    
+2026-06-20T11:21:10    
+2026-06-20T11:21:10    > temp-next-app@0.1.0 build
+2026-06-20T11:21:10    > next build
+2026-06-20T11:21:10    
+2026-06-20T11:21:14    Attention: Next.js now collects completely anonymous telemetry regarding usage.
+2026-06-20T11:21:14    This information is used to shape Next.js' roadmap and prioritize features.
+2026-06-20T11:21:14    You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+2026-06-20T11:21:14    https://nextjs.org/telemetry
+2026-06-20T11:21:14    
+2026-06-20T11:21:15    ▲ Next.js 16.2.9 (Turbopack)
+2026-06-20T11:21:15    - Environments: .env.local
+2026-06-20T11:21:15    
+2026-06-20T11:21:15      Creating an optimized production build ...
+2026-06-20T11:23:40    
+2026-06-20T11:23:40    > Build error occurred
+2026-06-20T11:23:40    Error: Turbopack build failed with 1 errors:
+2026-06-20T11:23:40    ./src/app/globals.css
+2026-06-20T11:23:40    Error evaluating Node.js code
+2026-06-20T11:23:40    Error: Cannot find module '@tailwindcss/postcss'
+2026-06-20T11:23:40    Require stack:
+2026-06-20T11:23:40    - /tmp/8decebdba7dec45/.next/build/chunks/[root-of-the-server]__0oj80bi._.js
+2026-06-20T11:23:40    - /tmp/8decebdba7dec45/.next/build/chunks/[turbopack]_runtime.js
+2026-06-20T11:23:40    - /tmp/8decebdba7dec45/.next/build/56416d4ae4ce586f.js
+2026-06-20T11:23:40        [at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)]
+2026-06-20T11:23:40        [at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)]
+2026-06-20T11:23:41        [at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)]
+2026-06-20T11:23:41        [at Function._load (node:internal/modules/cjs/loader:1192:37)]
+2026-06-20T11:23:41        [at TracingChannel.traceSync (node:diagnostics_channel:328:14)]
+2026-06-20T11:23:41        [at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)]
+2026-06-20T11:23:41        [at Module.require (node:internal/modules/cjs/loader:1463:12)]
+2026-06-20T11:23:41        [at require (node:internal/modules/helpers:147:16)]
+2026-06-20T11:23:41        at require (turbopack:///[turbopack-node]/transforms/postcss.ts:49:25) [/tmp/8decebdba7dec45/.next/build/chunks/[root-of-the-server]__0oj80bi._.js:134:33]
+2026-06-20T11:23:41        [at <anonymous>]
+2026-06-20T11:23:41    
+2026-06-20T11:23:41    Import trace:
+2026-06-20T11:23:41      Client Component Browser:
+2026-06-20T11:23:41        ./src/app/globals.css [Client Component Browser]
+2026-06-20T11:23:41        ./src/app/layout.tsx [Server Component]
+2026-06-20T11:23:41    
+2026-06-20T11:23:41    
+2026-06-20T11:23:41        at require (turbopack:///[turbopack-node]/transforms/postcss.ts:49:25) [/tmp/8decebdba7dec45/.next/build/chunks/[root-of-the-server]__0oj80bi._.js:134:33])
+2026-06-20T11:23:42    npm notice
+npm notice New major version of npm available! 10.9.7 -> 11.17.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.17.0
+npm notice To update run: npm install -g npm@11.17.0
+npm notice
+
+> Build error occurred
+Error: Turbopack build failed with 1 errors:
+./src/app/globals.css
+Error evaluating Node.js code
+Error: Cannot find module '@tailwindcss/postcss'
+Require stack:
+- /tmp/8decebdba7dec45/.next/build/chunks/[root-of-the-server]__0oj80bi._.js
+- /tmp/8decebdba7dec45/.next/build/chunks/[turbopack]_runtime.js
+- /tmp/8decebdba7dec45/.next/build/56416d4ae4ce586f.js
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)]
+    [at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)]
+    [at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)]
+    [at Function._load (node:internal/modules/cjs/loader:1192:37)]
+    [at TracingChannel.traceSync (node:diagnostics_channel:328:14)]
+    [at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)]
+    [at Module.require (node:internal/modules/cjs/loader:1463:12)]
+    [at require (node:internal/modules/helpers:147:16)]
+    at require (turbopack:///[turbopack-node]/transforms/postcss.ts:49:25) [/tmp/8decebdba7dec45/.next/build/chunks/[root-of-the-server]__0oj80bi._.js:134:33]
+    [at <anonymous>]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+
+
+    at require (turbopack:///[turbopack-node]/transforms/postcss.ts:49:25) [/tmp/8decebdba7dec45/.next/build/chunks/[root-of-the-server]__0oj80bi._.js:134:33])
+/bin/bash -c "oryx build /tmp/zipdeploy/extracted -o /home/site/wwwroot --platform nodejs --platform-version 22 -p virtualenv_name= --log-file /tmp/build-debug.log  -i /tmp/8decebdba7dec45 -p compress_node_modules=tar-gz | tee /tmp/oryx-build.log ; exit $PIPESTATUS "
+2026-06-20T11:23:42  
+2026-06-20T11:23:43  
+2026-06-20T11:23:43  Generating summary of Oryx build
+2026-06-20T11:23:43  Parsing the build logs
+2026-06-20T11:23:43  Found 0 issue(s)
+2026-06-20T11:23:43  
+2026-06-20T11:23:43  Build Summary :
+2026-06-20T11:23:43  ===============
+2026-06-20T11:23:44  Errors (0)
+2026-06-20T11:23:44  Warnings (0)
+2026-06-20T11:23:44  
+2026-06-20T11:23:44  Deployment Failed. deployer = OneDeploy deploymentPath = OneDeploy
